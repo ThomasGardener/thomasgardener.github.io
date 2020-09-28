@@ -48,6 +48,8 @@ footer {
 
 
 
+
+
 .portfolio .row {
   margin-bottom: 100px;
 }
@@ -103,9 +105,24 @@ word-wrap: normal;
 
 }
 
+.invis {
+  opacity: 0;
+}
 
-.enlarge {
+.img-outline {
+
+  background-color: #F9F9F9;
+}
+
+
+
+.enlarge, .img-text:hover, .something:hover {
   transform: scale(1.1);
+}
+
+.something {
+  transition: transform .2s;
+  width: 100%;
 }
 
 .img-scale {
@@ -228,6 +245,3 @@ border: 2px solid #00a9ff;
   .third {
     width: 100%;
   }
-
-
-}
