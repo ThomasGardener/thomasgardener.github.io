@@ -6,13 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="css/styles.css">
     <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <title>Thomas Gardener</title>
   </head>
   <body>
+    <div class="loader">
+    <div class="spinner">
+  <div class="rect1"></div>
+  <div class="rect2"></div>
+  <div class="rect3"></div>
+  <div class="rect4"></div>
+  <div class="rect5"></div>
+</div>
+</div>
     <header class="mb-4 d-flex mt-3">
         <a class="ml-5 align-self-center" href="#">
           <img class="logo" alt="logo of polarbear" src="img/polar.png">
@@ -86,13 +97,13 @@
         <p>One of my first websites created. A website shop for my own boosting community "Boosting Elite" to sell a range of services for the game Fortnite. It was created with HTML, CSS and JavaScript. With JavaScript having an important role for the pricing section and utilized Paypal for purchases. Bootstrap Framework</p>
         </div>
       </div>
-      <div class="col-12 col-lg-8 img-outline p-lg-4">
+      <div class="col-12 col-lg-8 img-outline p-lg-4 invis animate__animated up">
         <img class="img-port" alt="screenshot of boosting elite fortnite webpage" src="img/fortnite.png">
       </div>
 
     </div>
     <div class="row">
-      <div class="col-12 col-lg-4 left animate__animated invis">
+      <div class="col-12 col-lg-4 right animate__animated invis order-lg-1">
         <div class="port-details">
           <div class="img-scale">
         <a href="http://privatpasningkbh.dk/"><img class="img-text d-none d-xl-block" alt="logo of danish webpage" src="img/privat_text.png"></a>
@@ -101,13 +112,13 @@
         <p>Created for a Danish friend in 2018 that required a website for their Nursery business. It has already grown in the google rankings and has been responsible for their newer signups. Created purely with HTML and CSS. Bootstrap Framework  </p>
         </div>
       </div>
-      <div class="col-12 col-lg-8 img-outline p-lg-4">
+      <div class="col-12 col-lg-8 img-outline p-lg-4 order-lg-0 invis animate__animated up">
         <img class="img-port" alt="screenshot of danish webpage" src="img/privat.png">
       </div>
 
     </div>
     <div class="row">
-      <div class="col-12 col-lg-4 left animate__animated invis ">
+      <div class="col-12 col-lg-4 up animate__animated invis ">
         <div class="port-details">
           <div class="img-scale">
         <img class="img-text d-none d-xl-block" alt="logo of boosting elite WoW edition" src="img/elite_wow_text.png">
@@ -116,7 +127,7 @@
         <p>A second website for the Boosting Elite community. This time for a seperate game "World of Warcraft" and had a revamped and full background look to attract customers. A Dynamic website I created using PHP as the back-end language. While using Javascript and CSS on the front-end</p>
         </div>
       </div>
-      <div class="col-12 col-lg-8 img-outline p-lg-4">
+      <div class="col-12 col-lg-8 img-outline p-lg-4 invis animate__animated right">
         <img class="img-port" alt="webpage of boosting elite wow edition" src="img/wow.png">
       </div>
 
@@ -172,9 +183,10 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/preloader.js"></script>
     <script src="js/effects.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
