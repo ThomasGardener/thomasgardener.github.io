@@ -20,10 +20,20 @@ main {
 
 h1 {
   font-weight: bold;
+
+}
+
+.main-title {
+  color: #FFF;
 }
 
  h2 {
   font-size: 1.5em;
+  color: #FFF
+}
+
+.main-row {
+  color: #fff
 }
 
 hr {
@@ -38,7 +48,7 @@ hr {
 }
 
 footer {
-  background-color: #00a9ff;
+  background: linear-gradient(145deg,#42a5f5, #0d47a1);
 
   margin-top: -75px;
   padding-top: 120px;
@@ -46,6 +56,27 @@ footer {
 
 }
 
+body {
+  position: relative;
+}
+
+.portfolio {
+  margin-top: 200px;
+}
+
+.background-cutoff{
+
+
+  clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%);
+
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -50px;
+  background: linear-gradient(145deg,#0d47a1,#42a5f5);
+  height: 1000px;
+}
 
 
 
@@ -79,13 +110,14 @@ footer {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #F9F9F9;
+
   height: 100%;
 
 }
 
-.main-trio p {
+.main-row {
 word-wrap: normal;
+color: #fff;
 }
 
 .main-trio img {
@@ -141,15 +173,21 @@ overflow: hidden;
 
 }
 
+.nav-link {
+  color: #FFF !important;
+}
+
+
+
 .btn-nav-custom {
 
-color: #00a9ff;
-border: 2px solid #00a9ff;
+color: #FFF;
+border: 2px solid #FFF;
 }
 
 .btn-nav-custom:hover {
-  background-color: #00a9ff;
-  color: #fff;
+  background-color: #FFF;
+  color: Black;
 }
 
 .social-icon {
@@ -244,4 +282,28 @@ border: 2px solid #00a9ff;
 
   .third {
     width: 100%;
+  }
+
+  @media (max-width: 992px) {
+    .background-cutoff {
+      clip-path: polygon(0% 0%, 100% 0, 100% 85%, 50% 100%, 0 85%);
+      height: 950px;
+    }
+
+    .main-trio {
+      color: #212529;
+    }
+
+    .main-row .col-md-12:first-of-type .main-trio {
+      color: #fff;
+    }
+
+    .portfolio {
+      margin-top: 0px;
+    }
+
+    .box {
+      border-radius: 0px;
+    }
+
   }
